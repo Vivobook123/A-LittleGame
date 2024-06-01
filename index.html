@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="question">
+  <p>Guess How Much Do I Love You</p>
+</div>
+
+<div id="options">
+  <div class="option" onclick="guessCharacter(this)">
+    <span class="character">🍔</span>
+    <span class="label">A Burger</span>
+  </div>
+  <div class="option" onclick="guessCharacter(this)">
+    <span class="character">🦌</span>
+    <span class="label">A Deer</span>
+  </div>
+  <div class="option" onclick="guessCharacter(this)" id="disabled-option">
+    <span class="character">❌</span>
+    <span class="label">I Don't</span>
+  </div>
+  <div class="option" onclick="showMessage(this)">
+    <span class="character">♾️</span>
+    <span class="label">Infinity</span>
+  </div>
+</div>
+
+<div id="message-container" class="hidden">
+  <div id="message">
+    <p>Yes, I Love You More Than You Love Your "Ayla & Burgers" 😏!</p>
+    <p>I Love You To The Moon & Back ♾️</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
